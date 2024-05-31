@@ -15,6 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(path="/api", produces = {MediaType.APPLICATION_JSON_VALUE})
 public class AccountsController {
 
+  /**
+   * Creates a new account with the given customer information.
+   *
+   * @param customerDto the customer information to create the account
+   * @return the response entity containing the status code and status message
+   */
   @PostMapping("/create")
   public ResponseEntity<ResponseDto> createAccount(@RequestBody CustomerDto customerDto) {
     return ResponseEntity
