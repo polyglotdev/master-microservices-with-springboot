@@ -1,3 +1,4 @@
+<!-- trunk-ignore-all(prettier) -->
 # Master Microservices with Spring Boot, Docker, Kubernetes
 
 ![Course Image](image.png)
@@ -7,82 +8,85 @@
 Learn how to create enterprise and production ready Microservices with Spring, Spring Cloud, Docker and Kubernetes.
 
 ## Topics covered in the course
-* Section 1 - Introduction to Microservices Architecture
-* Section 2- Building microservices using Spring Boot
-* Section 3 - How do we right size our microservices & identify boundaries
-* Section 4 - Handle deployment, portability &  scalability of microservices using Docker
-* Section 5 - Deep Dive on Cloud Native Apps & 15-Factor methodology
-* Section 6 - Configurations Management in Microservices
-* Section 7 - Using MySQL DBs inside microservices
-* Section 8 - Service Discovery & Service Registration in microservices
-* Section 9 - Gateway, Routing & Cross cutting concerns in Microservices
-* Section 10 - Making Microservices Resilient
-* Section 11 - Observability and monitoring of microservices
-* Section 12 - Microservices Security
-* Section 13 - Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream
-* Section 14 - Event Driven microservices using Kafka,Spring Cloud Functions & Stream
-* Section 15 - Container Orchestration using Kubernetes
-* Section 16 - Deep dive on Helm
-* Section 17 - Server-side service discovery and load balancing using Kubernetes
-* Section 18 - Deploying microservices into cloud K8s cluster
-* Section 19 - Introduction to K8s Ingress, Service Mesh (Istio) & mTLS
-* Section 20 - Congratulations & Thank You
+
+- Section 1 - Introduction to Microservices Architecture
+- Section 2- Building microservices using Spring Boot
+- Section 3 - How do we right size our microservices & identify boundaries
+- Section 4 - Handle deployment, portability &  scalability of microservices using Docker
+- Section 5 - Deep Dive on Cloud Native Apps & 15-Factor methodology
+- Section 6 - Configurations Management in Microservices
+- Section 7 - Using MySQL DBs inside microservices
+- Section 8 - Service Discovery & Service Registration in microservices
+- Section 9 - Gateway, Routing & Cross cutting concerns in Microservices
+- Section 10 - Making Microservices Resilient
+- Section 11 - Observability and monitoring of microservices
+- Section 12 - Microservices Security
+- Section 13 - Event Driven microservices using RabbitMQ,Spring Cloud Functions & Stream
+- Section 14 - Event Driven microservices using Kafka,Spring Cloud Functions & Stream
+- Section 15 - Container Orchestration using Kubernetes
+- Section 16 - Deep dive on Helm
+- Section 17 - Server-side service discovery and load balancing using Kubernetes
+- Section 18 - Deploying microservices into cloud K8s cluster
+- Section 19 - Introduction to K8s Ingress, Service Mesh (Istio) & mTLS
+- Section 20 - Congratulations & Thank You
 
 ## Prerequisite for the course
+
 - Good understanding on Java and Spring concepts
 - Basic understanding on SpringBoot & REST services is a bonus but not mandatory
 - Interest to learn and explore about Microservices
 
 # Important Links
-- Spring Boot - https://spring.io/projects/spring-boot
-- Create SpringBoot project - https://start.spring.io
-- DTO pattern blog - https://martinfowler.com/eaaCatalog/dataTransferObject.html
-- Model Mapper - http://modelmapper.org/
-- Map Struct - https://mapstruct.org/
-- Spring Doc - https://springdoc.org/
-- Open API - https://www.openapis.org/
-- Lucidchart Blog - https://www.lucidchart.com/blog/ddd-event-storming
-- Docker website - https://www.docker.com
-- Docker hub website - https://hub.docker.com
-- Buildpacks website - https://buildpacks.io
-- Google Jib website - https://github.com/GoogleContainerTools/jib
-- Docker compose website - https://docs.docker.com/compose/
-- Twelve-Factor methodology - https://12factor.net
-- Beyond the Twelve-Factor App book - https://www.oreilly.com/library/view/beyond-the-twelve-factor/9781492042631/
-- Spring Cloud website - https://spring.io/projects/spring-cloud
-- Spring Cloud Config website - https://spring.io/projects/spring-cloud-config
-- Spring Cloud Bus website - https://spring.io/projects/spring-cloud-bus
-- RabbitMQ website - https://www.rabbitmq.com
-- Hookdeck website- https://hookdeck.com
-- Spring Cloud Netflix website - https://spring.io/projects/spring-cloud-netflix
-- Spring Cloud OpenFeign - https://spring.io/projects/spring-cloud-openfeign
-- Netflix Blog - https://netflixtechblog.com/netflix-oss-and-spring-boot-coming-full-circle-4855947713a0
-- Resilience4j website - https://resilience4j.readme.io
-- Spring Cloud Gateway website - https://spring.io/projects/spring-cloud-gateway
-- Stripe RateLimitter pattern blog - https://stripe.com/blog/rate-limiters
-- Apache Benchmark website - https://httpd.apache.org
-- Grafana website - https://grafana.com
-- Grafana Loki setup - https://grafana.com/docs/loki/latest/get-started/quick-start/
-- Micrometer website - https://micrometer.io
-- Prometheus website - https://prometheus.io/
-- Grafana Dashboards - https://grafana.com/grafana/dashboards/
-- OpenTelemetry website - https://opentelemetry.io/
-- OpenTelemetry automatic instrumentation - https://opentelemetry.io/docs/instrumentation/java/automatic/
-- Keycloak website - https://www.keycloak.org/
-- Apache Kafka website - https://kafka.apache.org
-- Docker compose file for Kafka - https://github.com/bitnami/containers/blob/main/bitnami/kafka/docker-compose.yml
-- Local Kubernetes Cluster with Docker Desktop - https://docs.docker.com/desktop/kubernetes/
-- Kubernetes Dashboard - https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
-- Helm website - https://helm.sh
-- Chocolatey website - https://chocolatey.org/
-- Bitnami Helm charts GitHub repo - https://github.com/bitnami/charts
-- Spring Cloud Kubernetes website - https://spring.io/projects/spring-cloud-kubernetes
-- Spring Cloud Kubernetes Blog - https://spring.io/blog/2021/10/26/new-features-for-spring-cloud-kubernetes-in-spring-cloud-2021-0-0-m3
-- GCP website - https://cloud.google.com
-- GCP SDK installation - https://cloud.google.com/sdk/docs/install
-- Kubernetes Ingress - https://kubernetes.io/docs/concepts/services-networking/ingress/
-- Ingress Controllers - https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
-- Istio (Service mesh) - https://istio.io
+
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [Create SpringBoot project](https://start.spring.io)
+- [DTO pattern blog](https://martinfowler.com/eaaCatalog/dataTransferObject.html)
+- [Model Mapper](http://modelmapper.org/)
+- [Map Struct](https://mapstruct.org/)
+- [Spring Doc](https://springdoc.org/)
+- [Open API](https://www.openapis.org/)
+- [Lucidchart Blog](https://www.lucidchart.com/blog/ddd-event-storming)
+- [Docker website](https://www.docker.com)
+- [Docker hub website](https://hub.docker.com)
+- [Buildpacks website -](tps://buildpacks.io)
+- [Google Jib website](https://github.com/GoogleContainerTools/jib)
+- [Docker compose website](https://docs.docker.com/compose/)
+- [Twelve-Factor methodology](https://12factor.net)
+- [Beyond the Twelve-Factor App book](https://www.oreilly.com/library/view/beyond-the-twelve-factor/9781492042631/)
+- [Spring Cloud website](https://spring.io/projects/spring-cloud)
+- [Spring Cloud Config website](https://spring.io/projects/spring-cloud-config)
+- [Spring Cloud Bus website](https://spring.io/projects/spring-cloud-bus)
+- [RabbitMQ website](https://www.rabbitmq.com)
+- [Hookdeck website](https://hookdeck.com)
+- [Spring Cloud Netflix website](https://spring.io/projects/spring-cloud-netflix)
+- [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
+- [Netflix Blog](https://netflixtechblog.com/netflix-oss-and-spring-boot-coming-full-circle-4855947713a0)
+- [Resilience4j website](https://resilience4j.readme.io)
+- [Spring Cloud Gateway website](https://spring.io/projects/spring-cloud-gateway)
+- [Stripe RateLimitter pattern blog](https://stripe.com/blog/rate-limiters)
+- [Apache Benchmark website](https://httpd.apache.org)
+- [Grafana website](https://grafana.com)
+- [Grafana Loki setup](https://grafana.com/docs/loki/latest/get-started/quick-start/)
+- [Micrometer website](https://micrometer.io)
+- [Prometheus website](https://prometheus.io/)
+- [Grafana Dashboards](https://grafana.com/grafana/dashboards/)
+- [OpenTelemetry website](https://opentelemetry.io/)
+- [OpenTelemetry automatic instrumentation](https://opentelemetry.io/docs/instrumentation/java/automatic/)
+- [Keycloak website](https://www.keycloak.org/)
+- [Apache Kafka website](https://kafka.apache.org)
+- [Docker compose file for Kafka](https://github.com/bitnami/containers/blob/main/bitnami/kafka/docker-compose.yml)
+- [Local Kubernetes Cluster with Docker Desktop](https://docs.docker.com/desktop/kubernetes/)
+- [Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
+- [Helm website](https://helm.sh)
+- [Chocolatey website](https://chocolatey.org/)
+- [Bitnami Helm charts GitHub repo](https://github.com/bitnami/charts)
+- [Spring Cloud Kubernetes website](https://spring.io/projects/spring-cloud-kubernetes)
+- [Spring Cloud Kubernetes Blog](https://spring.io/blog/2021/10/26/new-features-for-spring-cloud-kubernetes-in-spring-cloud-2021-0-0-m3)
+- [GCP website](https://cloud.google.com)
+- [GCP SDK installation](https://cloud.google.com/sdk/docs/install)
+- [Kubernetes Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+- [Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
+- [Istio (Service mesh)](https://istio.io)
 
 
 ## Maven Commands used in the course
