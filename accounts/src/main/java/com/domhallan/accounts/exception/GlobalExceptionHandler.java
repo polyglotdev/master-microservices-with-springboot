@@ -4,6 +4,7 @@ import com.domhallan.accounts.dto.ErrorResponseDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 
 import java.time.LocalDateTime;
@@ -29,6 +30,7 @@ public class GlobalExceptionHandler {
    *
    * @since 2024-05-31
    */
+  @ExceptionHandler(CustomerAlreadyExistsException.class)
   public ResponseEntity<ErrorResponseDto> handleCustomerAlreadyExistsException(CustomerAlreadyExistsException exception, WebRequest webRequest) {
 
     ErrorResponseDto errorResponseDto = new ErrorResponseDto(
@@ -37,6 +39,7 @@ public class GlobalExceptionHandler {
         exception.getMessage(),
         LocalDateTime.now().toString()
     );
-    return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorResponseDto);
+    return new ResponseEntity<>(errorResponseDto,
+        HttpStatus.BAD_REQUEST);
   }
 }
