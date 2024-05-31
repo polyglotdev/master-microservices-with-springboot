@@ -4,6 +4,7 @@ import com.domhallan.accounts.constants.AccountsConstants;
 import com.domhallan.accounts.dto.CustomerDto;
 import com.domhallan.accounts.dto.ResponseDto;
 import com.domhallan.accounts.service.IAccountsService;
+import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path="/api", produces = {MediaType.APPLICATION_JSON_VALUE})
+@AllArgsConstructor
 public class AccountsController {
 
   private IAccountsService iAccountsService;
