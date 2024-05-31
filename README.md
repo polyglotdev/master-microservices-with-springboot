@@ -2,6 +2,8 @@
 
 ![Course Image](image.png)
 
+[Dom's notes on Perplexity](https://www.perplexity.ai/page/Java-Spring-Boot-SsnFh73ZQRyOwrXuPlu2WA)
+
 Learn how to create enterprise and production ready Microservices with Spring, Spring Cloud, Docker and Kubernetes.
 
 ## Topics covered in the course
@@ -26,7 +28,7 @@ Learn how to create enterprise and production ready Microservices with Spring, S
 * Section 19 - Introduction to K8s Ingress, Service Mesh (Istio) & mTLS
 * Section 20 - Congratulations & Thank You
 
-## Pre-requisite for the course
+## Prerequisite for the course
 - Good understanding on Java and Spring concepts
 - Basic understanding on SpringBoot & REST services is a bonus but not mandatory
 - Interest to learn and explore about Microservices
@@ -85,91 +87,91 @@ Learn how to create enterprise and production ready Microservices with Spring, S
 
 ## Maven Commands used in the course
 
-| Maven Command                              | Description                                                        |
-| ------------------------------------------ | ------------------------------------------------------------------ |
-| "mvn clean install -Dmaven.test.skip=true" | To generate a jar inside target folder                             |
-| "mvn spring-boot:run"                      | To start a springboot maven project                                |
-| "mvn spring-boot:build-image"              | To generate a docker image using Buildpacks. No need of Dockerfile |
-| "mvn compile jib:dockerBuild"              | To generate a docker image using Google Jib. No need of Dockerfile |
+| Maven Command                              | Description                                                     |
+| ------------------------------------------ | --------------------------------------------------------------- |
+| `mvn clean install -Dmaven.test.skip=true` | Generate a jar inside target folder                             |
+| `mvn spring-boot:run`                      | Start a springboot maven project                                |
+| `mvn spring-boot:build-image`              | Generate a docker image using Buildpacks. No need of Dockerfile |
+| `mvn compile jib:dockerBuild`              | Generate a docker image using Google Jib. No need of Dockerfile |
 
 ## Docker Commands used in the course
 
-| Docker Command                                                                                                                | Description                                                       |
-| ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| "docker build . -t polyglotdev/accounts:s4"                                                                                   | To generate a docker image based on a Dockerfile                  |
-| "docker run  -p 8080:8080 polyglotdev/accounts:s4"                                                                            | To start a docker container based on a given image                |
-| "docker images"                                                                                                               | To list all the docker images present in the Docker server        |
-| "docker image inspect image-id"                                                                                               | To display detailed image information for a given image id        |
-| "docker image rm image-id"                                                                                                    | To remove one or more images for a given image ids                |
-| "docker image push docker.io/polyglotdev/accounts:s4"                                                                         | To push an image or a repository to a registry                    |
-| "docker image pull docker.io/polyglotdev/accounts:s4"                                                                         | To pull an image or a repository from a registry                  |
-| "docker ps"                                                                                                                   | To show all running containers                                    |
-| "docker ps -a"                                                                                                                | To show all containers including running and stopped              |
-| "docker container start container-id"                                                                                         | To start one or more stopped containers                           |
-| "docker container pause container-id"                                                                                         | To pause all processes within one or more containers              |
-| "docker container unpause container-id"                                                                                       | To unpause all processes within one or more containers            |
-| "docker container stop container-id"                                                                                          | To stop one or more running containers                            |
-| "docker container kill container-id"                                                                                          | To kill one or more running containers instantly                  |
-| "docker container restart container-id"                                                                                       | To restart one or more containers                                 |
-| "docker container inspect container-id"                                                                                       | To inspect all the details for a given container id               |
-| "docker container logs container-id"                                                                                          | To fetch the logs of a given container id                         |
-| "docker container logs -f container-id"                                                                                       | To follow log output of a given container id                      |
-| "docker container rm container-id"                                                                                            | To remove one or more containers based on container ids           |
-| "docker container prune"                                                                                                      | To remove all stopped containers                                  |
-| "docker compose up"                                                                                                           | To create and start containers based on given docker compose file |
-| "docker compose down"                                                                                                         | To stop and remove containers                                     |
-| "docker compose start"                                                                                                        | To start containers based on given docker compose file            |
-| "docker compose down"                                                                                                         | To stop the running containers                                    |
-| "docker run -p 3306:3306 --name accountsdb -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=accountsdb -d mysql"                 | To create a MySQL DB container                                    |
-| "docker run -p 6379:6379 --name polyglot-redis -d redis"                                                                      | To create a Redis Container                                       |
-| "docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:22.0.3 start-dev" | To create Keycloak Container                                      |
+| Docker Command                                                                                                                | Description                                                    |
+| ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| `docker build . -t polyglotdev/accounts:s4`                                                                                   | Generate a docker image based on a Dockerfile                  |
+| `docker run  -p 8080:8080 polyglotdev/accounts:s4`                                                                            | Start a docker container based on a given image                |
+| `docker images`                                                                                                               | List all the docker images present in the Docker server        |
+| `docker image inspect image-id`                                                                                               | Display detailed image information for a given image id        |
+| `docker image rm image-id`                                                                                                    | Remove one or more images for a given image ids                |
+| `docker image push docker.io/polyglotdev/accounts:s4`                                                                         | Push an image or a repository to a registry                    |
+| `docker image pull docker.io/polyglotdev/accounts:s4`                                                                         | Pull an image or a repository from a registry                  |
+| `docker ps`                                                                                                                   | Show all running containers                                    |
+| `docker ps -a`                                                                                                                | Show all containers including running and stopped              |
+| `docker container start container-id`                                                                                         | Start one or more stopped containers                           |
+| `docker container pause container-id`                                                                                         | Pause all processes within one or more containers              |
+| `docker container unpause container-id`                                                                                       | Unpause all processes within one or more containers            |
+| `docker container stop container-id`                                                                                          | Stop one or more running containers                            |
+| `docker container kill container-id`                                                                                          | Kill one or more running containers instantly                  |
+| `docker container restart container-id`                                                                                       | Restart one or more containers                                 |
+| `docker container inspect container-id`                                                                                       | Inspect all the details for a given container id               |
+| `docker container logs container-id`                                                                                          | Fetch the logs of a given container id                         |
+| `docker container logs -f container-id`                                                                                       | Follow log output of a given container id                      |
+| `docker container rm container-id`                                                                                            | Remove one or more containers based on container ids           |
+| `docker container prune`                                                                                                      | Remove all stopped containers                                  |
+| `docker compose up`                                                                                                           | Create and start containers based on given docker compose file |
+| `docker compose down`                                                                                                         | Stop and remove containers                                     |
+| `docker compose start`                                                                                                        | Start containers based on given docker compose file            |
+| `docker compose down`                                                                                                         | Stop the running containers                                    |
+| `docker run -p 3306:3306 --name accountsdb -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=accountsdb -d mysql`                 | Create a MySQL DB container                                    |
+| `docker run -p 6379:6379 --name polyglot-redis -d redis`                                                                      | Create a Redis Container                                       |
+| `docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:22.0.3 start-dev` | Create Keycloak Container                                      |
 
 
 ## Apache Benchmark command used in the course
 
-| Apache Benchmark command                                                   | Description                                           |
-| -------------------------------------------------------------------------- | ----------------------------------------------------- |
-| "ab -n 10 -c 2 -v 3 http://localhost:8072/eazybank/cards/api/contact-info" | To perform load testing on API by sending 10 requests |
+| Apache Benchmark command                                                   | Description                                        |
+| -------------------------------------------------------------------------- | -------------------------------------------------- |
+| `ab -n 10 -c 2 -v 3 http://localhost:8072/eazybank/cards/api/contact-info` | Perform load testing on API by sending 10 requests |
 
 ## Kubernetes Commands used in the course
 
-| Kubernetes Command                                                                                           | Description                                                          |
-| ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| "kubectl apply -f filename"                                                                                  | To create a deployment/service/configmap based on a given YAML file  |
-| "kubectl get all"                                                                                            | To get all the components inside your cluster                        |
-| "kubectl get pods"                                                                                           | To get all the pods details inside your cluster                      |
-| "kubectl get pod pod-id"                                                                                     | To get the details of a given pod id                                 |
-| "kubectl describe pod pod-id"                                                                                | To get more details of a given pod id                                |
-| "kubectl delete pod pod-id"                                                                                  | To delete a given pod from cluster                                   |
-| "kubectl get services"                                                                                       | To get all the services details inside your cluster                  |
-| "kubectl get service service-id"                                                                             | To get the details of a given service id                             |
-| "kubectl describe service service-id"                                                                        | To get more details of a given service id                            |
-| "kubectl get nodes"                                                                                          | To get all the node details inside your cluster                      |
-| "kubectl get node node-id"                                                                                   | To get the details of a given node                                   |
-| "kubectl get replicasets"                                                                                    | To get all the replica sets details inside your cluster              |
-| "kubectl get replicaset replicaset-id"                                                                       | To get the details of a given replicaset                             |
-| "kubectl get deployments"                                                                                    | To get all the deployments details inside your cluster               |
-| "kubectl get deployment deployment-id"                                                                       | To get the details of a given deployment                             |
-| "kubectl get configmaps"                                                                                     | To get all the configmap details inside your cluster                 |
-| "kubectl get configmap configmap-id"                                                                         | To get the details of a given configmap                              |
-| "kubectl get events --sort-by=.metadata.creationTimestamp"                                                   | To get all the events occurred inside your cluster                   |
-| "kubectl scale deployment accounts-deployment --replicas=1"                                                  | To set the number of replicas for a deployment inside your cluster   |
-| "kubectl set image deployment gatewayserver-deployment gatewayserver=polyglotdev/gatewayserver:s11 --record" | To set a new image for a deployment inside your cluster              |
-| "kubectl rollout history deployment gatewayserver-deployment"                                                | To know the rollout history for a deployment inside your cluster     |
-| "kubectl rollout undo deployment gatewayserver-deployment --to-revision=1"                                   | To rollback to a given revision for a deployment inside your cluster |
-| "kubectl get pvc"                                                                                            | To list the pvcs inside your cluster                                 |
-| "kubectl delete pvc data-happy-panda-mariadb-0"                                                              | To delete a pvc inside your cluster                                  |
+| Kubernetes Command                                                                                           | Description                                                       |
+| ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| `kubectl apply -f filename`                                                                                  | Create a deployment/service/configmap based on a given YAML file  |
+| `kubectl get all`                                                                                            | Get all the components inside your cluster                        |
+| `kubectl get pods`                                                                                           | Get all the pods details inside your cluster                      |
+| `kubectl get pod pod-id`                                                                                     | Get the details of a given pod id                                 |
+| `kubectl describe pod pod-id`                                                                                | Get more details of a given pod id                                |
+| `kubectl delete pod pod-id`                                                                                  | Delete a given pod from cluster                                   |
+| `kubectl get services`                                                                                       | Get all the services details inside your cluster                  |
+| `kubectl get service service-id`                                                                             | Get the details of a given service id                             |
+| `kubectl describe service service-id`                                                                        | Get more details of a given service id                            |
+| `kubectl get nodes`                                                                                          | Get all the node details inside your cluster                      |
+| `kubectl get node node-id`                                                                                   | Get the details of a given node                                   |
+| `kubectl get replicasets`                                                                                    | Get all the replica sets details inside your cluster              |
+| `kubectl get replicaset replicaset-id`                                                                       | Get the details of a given replicaset                             |
+| `kubectl get deployments`                                                                                    | Get all the deployments details inside your cluster               |
+| `kubectl get deployment deployment-id`                                                                       | Get the details of a given deployment                             |
+| `kubectl get configmaps`                                                                                     | Get all the configmap details inside your cluster                 |
+| `kubectl get configmap configmap-id`                                                                         | Get the details of a given configmap                              |
+| `kubectl get events --sort-by=.metadata.creationTimestamp`                                                   | Get all the events occurred inside your cluster                   |
+| `kubectl scale deployment accounts-deployment --replicas=1`                                                  | Set the number of replicas for a deployment inside your cluster   |
+| `kubectl set image deployment gatewayserver-deployment gatewayserver=polyglotdev/gatewayserver:s11 --record` | Set a new image for a deployment inside your cluster              |
+| `kubectl rollout history deployment gatewayserver-deployment`                                                | Know the rollout history for a deployment inside your cluster     |
+| `kubectl rollout undo deployment gatewayserver-deployment --to-revision=1`                                   | Rollback to a given revision for a deployment inside your cluster |
+| `kubectl get pvc`                                                                                            | List the pvcs inside your cluster                                 |
+| `kubectl delete pvc data-happy-panda-mariadb-0`                                                              | Delete a pvc inside your cluster                                  |
 
 ## Helm Commands used in the course
 
 | Helm Command                      | Description                                                    |
 | --------------------------------- | -------------------------------------------------------------- |
-| "helm create [NAME]"              | Create a default chart with the given name                     |
-| "helm dependencies build"         | To recompile the given helm chart                              |
-| "helm install [NAME] [CHART]"     | Install the given helm chart into K8s cluster                  |
-| "helm upgrade [NAME] [CHART]"     | Upgrades a specified release to a new version of a chart       |
-| "helm history [NAME]"             | Display historical revisions for a given release               |
-| "helm rollback [NAME] [REVISION]" | Roll back a release to a previous revision                     |
-| "helm uninstall [NAME]"           | Uninstall all of the resources associated with a given release |
-| "helm template [NAME] [CHART]"    | Render chart templates locally along with the values           |
-| "helm list"                       | Lists all of the helm releases inside a K8s cluster            |
+| `helm create [NAME]`              | Create a default chart with the given name                     |
+| `helm dependencies build`         | To recompile the given helm chart                              |
+| `helm install [NAME] [CHART]`     | Install the given helm chart into K8s cluster                  |
+| `helm upgrade [NAME] [CHART]`     | Upgrades a specified release to a new version of a chart       |
+| `helm history [NAME]`             | Display historical revisions for a given release               |
+| `helm rollback [NAME] [REVISION]` | Roll back a release to a previous revision                     |
+| `helm uninstall [NAME]`           | Uninstall all of the resources associated with a given release |
+| `helm template [NAME] [CHART]`    | Render chart templates locally along with the values           |
+| `helm list`                       | Lists all of the helm releases inside a K8s cluster            |
