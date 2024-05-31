@@ -9,7 +9,7 @@ public class ErrorResponseDto {
   // Represents the API path where the error occurred
   private String apiPath;
 
-  // Represents the error code as a HTTP status
+  // Represents the error code as an HTTP status
   private HttpStatus errorCode;
 
   // Represents the error message
