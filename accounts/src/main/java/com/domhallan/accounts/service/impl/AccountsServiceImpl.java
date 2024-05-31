@@ -1,6 +1,8 @@
 package com.domhallan.accounts.service.impl;
 
 import com.domhallan.accounts.dto.CustomerDto;
+import com.domhallan.accounts.entity.Customer;
+import com.domhallan.accounts.mapper.CustomerMapper;
 import com.domhallan.accounts.repository.AccountsRepository;
 import com.domhallan.accounts.repository.CustomerRepository;
 import com.domhallan.accounts.service.IAccountsService;
@@ -19,6 +21,7 @@ public class AccountsServiceImpl implements IAccountsService {
    */
   @Override
   public void createAccount(CustomerDto customerDto) {
-
+    Customer customer = CustomerMapper.mapToCustomer(customerDto, new Customer());
+    customerRepository.save(customer);
   }
 }
